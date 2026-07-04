@@ -1,0 +1,8 @@
+[
+  { "image": "examples/demo-dusk.jpg", "template": "mono", "size": "4x5",
+    "headline": "OPENING **NIGHT**", "kicker": "vol. 04", "out": "output/night_4x5.png" },
+  { "image": "examples/demo-moss.jpg", "template": "editorial", "size": "9x16",
+    "headline": "The Night | **Shift**", "kicker": "Chapter Two", "out": "output/shift_9x16.png" },
+  { "template": "quote", "size": "1x1",
+    "headline": "Ship the | **real** thing.", "kicker": "Field Notes", "out": "output/quote_1x1.png" }
+]

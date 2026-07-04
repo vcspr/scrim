@@ -44,6 +44,19 @@ eyebrow line. `--logo path.png` places a wordmark in the top-left safe area.
 
 **Sizes:** `4x5` (1080×1350), `1x1` (1080×1080), `9x16` (1080×1920), `16x9` (1920×1080).
 
+## Batch Mode
+
+One manifest in, a folder of finished posts out. JSON or CSV, same fields as
+the CLI:
+
+```bash
+python3 batch.py examples/jobs.json
+```
+
+Each job names an image (optional for `quote`), a template, a size, and the
+copy. Failures are reported per row and don't stop the run — a 200-post batch
+finishes with a scoreboard, not a stack trace.
+
 ## Batch Curation Workflow
 
 For picking covers out of a large shoot:
@@ -81,7 +94,6 @@ it is a template. PRs welcome.
 
 ## Roadmap
 
-- [ ] Batch mode: CSV/JSON in, a folder of finished posts out
 - [ ] Carousel sets: cover + clean swipe slides from one command
 - [ ] Duotone and grid templates
 - [ ] Video poster frames (pull the sharpest frame, then render)

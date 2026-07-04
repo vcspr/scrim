@@ -23,6 +23,8 @@ pip install pillow
 python3 cardforge.py examples/demo-dusk.jpg --headline "OPENING **NIGHT**" --kicker "vol. 04"
 python3 cardforge.py photo.jpg --template editorial --size 9x16 \
     --headline "The Night | **Shift**" --kicker "Chapter Two"
+python3 cardforge.py --template quote \
+    --headline "Make it **loud**, | then make it | make sense." --kicker "A. Rivera"
 ```
 
 Cards land in `output/`. The demo backgrounds in `examples/` are generated
@@ -35,6 +37,7 @@ stock photography.
 |---|---|
 | `mono` | Rounded photo card on black. ALL-CAPS letterspaced monospace headline, centered over a bottom fade that stays subtle until it grounds the type. Optional kicker. |
 | `editorial` | Full-bleed photo. Left-aligned high-contrast serif with a thin rule and mono kicker. Break lines with `\|`. |
+| `quote` | Typographic pull-quote, no photo required. Giant serif over flat color (or a photo), mono attribution. |
 
 **Markup:** `**word**` renders bold in any template. `--kicker` adds the small
 eyebrow line. `--logo path.png` places a wordmark in the top-left safe area.

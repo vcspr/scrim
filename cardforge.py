@@ -20,14 +20,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from core import SIZES  # noqa: E402
-from templates import mono, editorial  # noqa: E402
+from templates import mono, editorial, quote  # noqa: E402
 
-TEMPLATES = {"mono": mono.render, "editorial": editorial.render}
+TEMPLATES = {"mono": mono.render, "editorial": editorial.render, "quote": quote.render}
 
 
 def main():
     ap = argparse.ArgumentParser(description="Branded social cards from the command line.")
-    ap.add_argument("image", help="source photo")
+    ap.add_argument("image", nargs="?", default=None, help="source photo (optional for the quote template)")
     ap.add_argument("--template", choices=sorted(TEMPLATES), default="mono")
     ap.add_argument("--size", choices=sorted(SIZES), default="4x5")
     ap.add_argument("--headline", default="")
@@ -39,7 +39,7 @@ def main():
     out = a.out
     if not out:
         Path("output").mkdir(exist_ok=True)
-        out = f"output/{Path(a.image).stem}_{a.template}_{a.size}.png"
+        out = f"output/{(Path(a.image).stem if a.image else a.template)}_{a.template}_{a.size}.png"
 
     TEMPLATES[a.template](
         a.image, out, a.headline,

@@ -1,4 +1,4 @@
-# card-forge
+# scrim
 
 **Branded social cards from the command line. One photo in, designed post out.**
 
@@ -9,7 +9,7 @@
 
 ![Six cards from two templates across three aspect ratios](media/hero.png)
 
-card-forge turns a folder of photos into finished social posts: cover-cropped,
+scrim turns a folder of photos into finished social posts: cover-cropped,
 faded, and typeset, at feed and story sizes. It is pure Pillow. No browser, no
 API, no template DSL. Each template is one readable Python file, so the output
 is deterministic and the whole tool runs anywhere Python runs.
@@ -17,7 +17,7 @@ is deterministic and the whole tool runs anywhere Python runs.
 ## Quickstart
 
 ```bash
-git clone https://github.com/vcspr/card-forge && cd card-forge
+git clone https://github.com/vcspr/scrim && cd scrim
 pip install pillow
 
 python3 cardforge.py examples/demo-dusk.jpg --headline "OPENING **NIGHT**" --kicker "vol. 04"

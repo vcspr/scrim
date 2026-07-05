@@ -20,9 +20,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from core import SIZES  # noqa: E402
-from templates import mono, editorial, quote  # noqa: E402
+from templates import mono, editorial, quote, duotone, grid  # noqa: E402
 
-TEMPLATES = {"mono": mono.render, "editorial": editorial.render, "quote": quote.render}
+TEMPLATES = {"mono": mono.render, "editorial": editorial.render, "quote": quote.render,
+             "duotone": duotone.render, "grid": grid.render}
 
 
 def main():

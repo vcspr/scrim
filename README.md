@@ -95,7 +95,7 @@ it is a template. PRs welcome.
 ## Roadmap
 
 - [ ] Carousel sets: cover + clean swipe slides from one command
-- [ ] Duotone and grid templates
+- [x] Duotone and grid templates: `--template duotone` and `--template grid`
 - [ ] Video poster frames (pull the sharpest frame, then render)
 
 ## License

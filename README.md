@@ -7,7 +7,7 @@
 [![Pure Pillow](https://img.shields.io/badge/deps-Pillow%20only-blue.svg)](#how-it-works)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](#adding-a-template)
 
-![Six cards from two templates across three aspect ratios](media/hero.png)
+![Branded social cards rendered by scrim across templates and aspect ratios](media/hero.png)
 
 scrim turns a folder of photos into finished social posts: cover-cropped,
 faded, and typeset, at feed and story sizes. It is pure Pillow. No browser, no
